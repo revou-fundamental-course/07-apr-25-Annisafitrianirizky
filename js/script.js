@@ -50,4 +50,4 @@ function showDivs(n) {
 
 setInterval(function() {
   plusDivs(1);
-}, 1000); // Change image every 3 seconds
+}, 3000); // Change image every 3 seconds
