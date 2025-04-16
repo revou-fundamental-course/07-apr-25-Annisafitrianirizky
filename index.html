@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YG Company</title>
+  <title>SM Entertainment</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,33 +14,73 @@
     </div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">Our Profile</a>
+      <a href="#profile">Our Profile</a>
       <a href="#porto">Portofolio</a>
       <a href="#contact">Massage Us</a>
     </nav>
   </header>
+
+  <hr/>
+
   <main>
     <section id="home">
-      <!--banner-->
+      <header class="banner-header">
+        <h2>Hi <span id="name"></span>, Wellcome to YG Company</h2>
+        </header>
+
       <div class="banner-img">
       </div>
-      <p>Your satisfaction is our priority.</p>
+
+      <article class="banner-text">
+        <p>Your satisfaction is our priority.</p>
+        </article>
     </section>
-    <section id="about">
+
+      <hr/>
+
+    <section id="profile">
+      <header class="profile-header">
       <h2>Our Profile</h2>
-      <p>We are a company dedicated to providing the best services.</p>
+      </header>
+
+      <article class="profile-text">
+        <h1>About Us</h1>
+        <p>We are a company dedicated to providing the best services.</p>
+      </article>
     </section>
+
     <section id="porto">
+      <header class="porto-header">
       <h2>Portofolio</h2>
+      </header>
+
+      <article>
       <p>We offer a wide range of services to meet your needs.</p>
+      </article>
     </section>
+
+    <hr/>
+
     <section id="contact">
+      <header class="contact-header">
       <h2>Massage Us</h2>
-      <p>If you have any questions, feel free to reach out.</p>
+      </header>
+
+      <form name="message-form" id="message-form" onsubmit="return validateForm()">
+          <input type="text" id="name-input" placeholder="Masukkan nama anda">
+          <button type="submit" id="kirim">Ganti Nama</button>
+          <p id="error-name"></p>
+      </form>
     </section>
   </main>
+
+  <hr/>
+
   <footer>
+    <span class="footer-text">Made By Annisa Fitriani Rizky</span>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
