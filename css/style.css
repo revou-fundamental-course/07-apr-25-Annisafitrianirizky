@@ -65,12 +65,6 @@ nav a:hover {
     background: pink;
 }
 
-/*.banner-header {
-    background-size: cover;
-    height: 200px;
-    border-radius: 5px;
-}*/
-
 main {
     margin: 20px auto;
     padding: 20px;
@@ -79,12 +73,44 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/*.banner {
-    /*background: url('https://png.pngtree.com/background/20210709/original/pngtree-full-aesthetic-nebula-starry-sky-banner-background-picture-image_916071.jpg') no-repeat center center;
-    background-size: cover;
-    height: 200px;
+
+.prev, .next {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
     border-radius: 5px;
-}*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
 
 .message-form {
     display: flex;

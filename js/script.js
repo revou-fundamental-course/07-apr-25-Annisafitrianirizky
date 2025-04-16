@@ -1,3 +1,5 @@
+//get data
+
 function changeName(){
     let name = prompt("Enter your name: ")
     document.getElementById("name").innerHTML = name
@@ -27,6 +29,8 @@ function setName(nama) {
     document.getElementById("error-name").innerHTML = ""
 }
 
+//banner slideshow
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -50,4 +54,4 @@ function showDivs(n) {
 
 setInterval(function() {
   plusDivs(1);
-}, 3000); // Change image every 3 seconds
+}, 300000);
