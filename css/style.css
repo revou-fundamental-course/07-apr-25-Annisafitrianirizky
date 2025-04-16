@@ -1,49 +1,122 @@
-
 body {
-    background-color: black;
-    color: white;
+    color: black;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
 header {
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: goldenrod;
-    border-bottom: 1px solid #ccc;
+    background: pink;
+    padding: 0 20px;
 }
 
-.main-logo {
-    justify-content: flex-start;
-    width: 100px;
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 50px;
     height: 50px;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/YG_Entertainment_Logo.svg/1500px-YG_Entertainment_Logo.svg.png");
+    border-radius: 10px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/SM_Entertainment_Logo.svg/512px-SM_Entertainment_Logo.svg.png') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    margin-right: 20px;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: goldenrod;
-    color: black;
-    padding: 10px;
 }
 
 nav a {
-    text-decoration: none;
     color: black;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-    color: white;
-    background-color: black;
-    padding: 5px 10px;
+    background: pink;
+}
+
+/*.banner-header {
+    background-size: cover;
+    height: 200px;
     border-radius: 5px;
+}*/
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*.banner {
+    /*background: url('https://png.pngtree.com/background/20210709/original/pngtree-full-aesthetic-nebula-starry-sky-banner-background-picture-image_916071.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 5px;
+}*/
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: pink;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 180px;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
 }
