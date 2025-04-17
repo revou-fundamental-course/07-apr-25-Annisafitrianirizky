@@ -14,7 +14,7 @@
     </div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#profile">Our Profile</a>
+      <a href="#artist">Our Artist</a>
       <a href="#porto">Portofolio</a>
       <a href="#contact">Massage Us</a>
     </nav>
@@ -59,20 +59,33 @@
         
 
       <article class="banner-text">
-        <p>Check out what's new on SMTOWN!</p>
+        <p>Check out what's new on our SMTOWN Youtube Channel!</p>
         </article>
     </section>
 
       <hr/>
 
-    <section id="profile">
-      <header class="profile-header">
-      <h2>Our Profile</h2>
+    <section id="artist">
+      <header class="artist-header">
+      <h2>Meet Our Artist!</h2>
       </header>
 
-      <article class="profile-text">
-        <h1>About Us</h1>
-        <p>We are a company dedicated to providing the best services.</p>
+      <article class="artist-card">
+        <div class="artist-card-item">
+          <img src="Assets/img/exo_ot9.jpg" alt="Exo" class="artist-img">
+          <h3>EXO</h3>
+          <p class="artist-description">EXO represents one of our most successful and influential groups to date. Debuting in 2012 with a unique dual-unit concept (EXO-K and EXO-M), EXO was designed to simultaneously target the Korean and Chinese markets—a groundbreaking strategy at the time. Their exceptional talent, versatility in music genres, and strong group identity have led to numerous record-breaking achievements, both domestically and internationally. EXO has significantly contributed to the global spread of K-pop and has set new standards in performance, branding, and fan engagement. We view EXO not just as artists, but as a cornerstone of SM’s legacy.</p>
+        </div>
+        <div class="artist-card-item">
+          <img src="Assets/img/nct_wish.jpeg" alt="Exo" class="artist-img">
+          <h3>NCT Wish</h3>
+          <p class="artist-description">we are excited to introduce NCT WISH as the newest addition to our NCT brand. Debuting in 2024, NCT WISH carries the spirit of hope, dreams, and youthful energy, aiming to connect deeply with the younger generation. As the first fixed unit under the NCT umbrella to debut directly in Japan, NCT WISH symbolizes a strategic expansion of our global vision. With their fresh charm, multilingual capabilities, and strong performance skills, we believe NCT WISH has the potential to become a powerful force in the global music scene, continuing the innovation and limitless concept that defines NCT.</p>
+        </div>
+        <div class="artist-card-item">
+          <img src="Assets/img/suju.jpg" alt="Exo" class="artist-img">
+          <h3>Super Junior</h3>
+          <p class="artist-description">We are proud to introduce you to Super Junior which holds a special place in our company’s history as one of the pioneers of the Korean Wave (Hallyu). Debuting in 2005, Super Junior played a key role in shaping the modern K-pop industry, not only through their hit songs like “Sorry, Sorry” and “Mr. Simple,” but also through their success in variety shows, acting, radio, and global tours. They set the foundation for multi-talented idol groups and proved that K-pop artists could achieve long-lasting, global influence. Super Junior remains a legacy group and an iconic part of SM’s growth and identity.</p>
+        </div>
       </article>
     </section>
 
@@ -97,9 +110,17 @@
 
       <section class="message-form">
       <form class="card-form" name="message-form" id="message-form" onsubmit="return validateForm()">
-          <input type="text" id="name-input" placeholder="Masukkan nama anda">
+        <h3>Now you could send a message to our idol!</h3>
+          <label for="name-input">Name:</label>
+          <input type="text" id="name-input" placeholder="enter your name">
+          <label for="email-input">Email:</label>
+          <input type="email" id="email-input" placeholder="enter your email">
+          <label for="message-input">Message:</label>
+          <textarea id="message-input" placeholder="drop your message here!"></textarea>
           <button type="submit" id="kirim">Ganti Nama</button>
           <p id="error-name"></p>
+          <p id="error-email"></p>
+          <p id="error-message"></p>
       </form>
 
       <div class="form-answer"></div>

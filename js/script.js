@@ -48,8 +48,6 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-
-  console.log("Current slide index: " + slideIndex); // Debugging line
 }
 
 setInterval(function() {
