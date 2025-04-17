@@ -270,4 +270,66 @@ footer a {
     .logo {
         margin-bottom: 14px;
     }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .artist-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist-card-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .message-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-answer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prev, 
+    .next {
+        bottom: 5%;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+    }
 }
