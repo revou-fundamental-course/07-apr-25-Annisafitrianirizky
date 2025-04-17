@@ -15,7 +15,7 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#artist">Our Artist</a>
-      <a href="#porto">Portofolio</a>
+      <a href="#about">About Us</a>
       <a href="#contact">Massage Us</a>
     </nav>
   </header>
@@ -59,7 +59,7 @@
         
 
       <article class="banner-text">
-        <p>Check out what's new on our SMTOWN Youtube Channel!</p>
+        <p>Check out what's new on our SMTOWN Youtube Channel! &#127881;</p>
         </article>
     </section>
 
@@ -91,13 +91,30 @@
 
     <hr/>
 
-    <section id="porto">
-      <header class="porto-header">
-      <h2>Portofolio</h2>
+    <section id="about">
+      <header class="about-header">
+      <h2>About Us</h2>
       </header>
 
-      <article>
-      <p>We offer a wide range of services to meet your needs.</p>
+      <article class="about-card">
+        <div class="about-card-item">
+          <img src="Assets/img/smtown.jpg" alt="SMTOWN" class="about-img">
+          <div class="about-text">
+            <h3>The Histoy of SM in <b>Korean Hallyu (한류, the Korean Wave):</b></h3> 
+            <p><b>SM Entertainment</b> is one of South Korea's leading entertainment companies and a pioneer of the <b>Korean Wave (Hallyu).</b> 
+              Founded in 1995 by <b>Lee Soo-man</b>, SM played a key role in shaping the K-pop industry by developing the idol training system 
+              and promoting artists globally. From early acts like <b>H.O.T.</b> and <b>BoA</b>, to global groups like <b>TVXQ</b>, <b>Girls’ Generation</b>, <b>EXO</b>, and <b>aespa</b>, 
+              SM has continuously led K-pop’s expansion into Asia, the Americas, and beyond. Known for innovation in music, performance, and digital experiences, 
+              SM has been instrumental in spreading Korean culture worldwide.</p></div>
+        </div>
+        <div class="about-card-item">
+          <div class="about-text">
+          <h3>✨ Get Closer to Your Bias at SM COEX Artium! ✨</h3> 
+          <div class="about-text">Shop exclusive official SM artist merch you won’t find anywhere else — from albums and lightsticks to limited-edition collectibles! 
+            <p>Only at SM Town & Store, SM COEX Artium. Feel the K-pop magic, live the Hallyu experience!💖🎶</p></div>
+          </div>
+          <img src="Assets/img/sm_merch.jpg" alt="SMTOWN" class="about-img">
+        </div>
       </article>
     </section>
 
@@ -113,17 +130,24 @@
         <h3>Now you could send a message to our idol!</h3>
           <label for="name-input">Name:</label>
           <input type="text" id="name-input" placeholder="enter your name">
+          <div id="error-name"></div>
           <label for="email-input">Email:</label>
           <input type="email" id="email-input" placeholder="enter your email">
+          <div id="error-email"></div>
           <label for="message-input">Message:</label>
           <textarea id="message-input" placeholder="drop your message here!"></textarea>
-          <button type="submit" id="kirim">Ganti Nama</button>
-          <p id="error-name"></p>
-          <p id="error-email"></p>
-          <p id="error-message"></p>
+          <div id="error-message"></div>
+          <button type="submit" id="kirim">Send Your Message!</button>
       </form>
 
-      <div class="form-answer"></div>
+      <div class="form-answer">
+        <h3>Name:</h3>
+        <p id="name-output" class="name-output"></p>
+        <h3>Email:</h3>
+        <p id="email-output"></p>
+        <h3>Message:</h3>
+        <p id="message-output"></p>
+      </div>
       </section>
     </section>
   </main>
