@@ -8,25 +8,46 @@ function changeName(){
 changeName();
 
 function validateForm() {
-    const nama = document.forms["message-form"]["name-input"].value
-    const angka = 11
-    if (nama == '') {
-        document.getElementById("error-name").innerHTML = "Please enter your name"
+  const nama = document.forms["message-form"]["name-input"].value;
+  const email = document.forms["message-form"]["email-input"].value;
+  const message = document.forms["message-form"]["message-input"].value;
 
-        return false
-    }
+  let isValid = true;
 
-    //document.getElementById("name").innerHTML = nama
-    //document.getElementById("error-name").innerHTML = ""
+  // Validasi nama
+  if (nama === '') {
+      document.getElementById("error-name").innerHTML = "Please enter your name";
+      isValid = false;
+  } else {
+      document.getElementById("error-name").innerHTML = "";
+  }
 
-    setName(nama);
+  // Validasi email
+  if (email === '') {
+      document.getElementById("error-email").innerHTML = "Please enter your email";
+      isValid = false;
+  } else {
+      document.getElementById("error-email").innerHTML = "";
+  }
 
-    return false
-}
+  // Validasi pesan
+  if (message === '') {
+      document.getElementById("error-message").innerHTML = "Please enter your message";
+      isValid = false;
+  } else {
+      document.getElementById("error-message").innerHTML = "";
+  }
 
-function setName(nama) {
-    document.getElementById("name").innerHTML = nama
-    document.getElementById("error-name").innerHTML = ""
+  if (!isValid) {
+      return false;
+  }
+
+  // Tampilkan hasil input ke bagian output
+  document.getElementById("name-output").innerHTML = nama;
+  document.getElementById("email-output").innerHTML = email;
+  document.getElementById("message-output").innerHTML = message;
+
+  return false; 
 }
 
 //banner slideshow
