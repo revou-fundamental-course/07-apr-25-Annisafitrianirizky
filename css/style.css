@@ -256,80 +256,89 @@ footer a {
     transition: background 0.3s;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav-header {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Default sudah untuk Desktop */
 
-    .menu {
-        width: 180px;
-        flex-direction: column;
-    }
+@media screen and (max-width: 1200px) {
+  /* Untuk layar Laptop besar */
+  .about-card-item {
+    flex-direction: column;
+    height: auto;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+}
 
-    .logo {
-        margin-bottom: 14px;
-    }
+@media screen and (max-width: 992px) {
+  /* Untuk layar Laptop & Tablet landscape */
+  .artist-card {
+    flex-direction: column;
+  }
+  .artist-card-item {
+    width: 80%;
+  }
+  .message-form {
+    flex-direction: column;
+  }
+}
 
-    .main {
-        width: 100%;
-        padding: 10px;
-    }
+@media screen and (max-width: 768px) {
+  /* Untuk layar Tablet */
+  .nav-header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .about-card-item {
+    flex-direction: column;
+    height: auto;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+  .card-form, .form-answer {
+    width: 90%;
+    height: auto;
+  }
+  .prev, .next {
+    bottom: 5%;
+  }
+}
 
-    .artist-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .artist-card-item {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .artist-img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .about-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-card-item {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .message-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-form {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form-answer {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .prev, 
-    .next {
-        bottom: 5%;
-        left: 5%;
-        right: 5%;
-        width: 90%;
-    }
+@media screen and (max-width: 576px) {
+  /* Untuk layar Mobile kecil (HP) */
+  body {
+    padding: 10px;
+  }
+  header {
+    padding: 5px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .artist-img {
+    width: 80px;
+    height: 80px;
+  }
+  .about-img {
+    width: 100%;
+    height: auto;
+  }
+  iframe.img-slideshow {
+    height: 250px;
+  }
+  nav a {
+    padding: 8px 12px;
+  }
+  .card-form, .form-answer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
 }
